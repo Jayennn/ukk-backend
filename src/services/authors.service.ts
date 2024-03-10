@@ -25,7 +25,7 @@ export const getDetailAuthor = async(id: number) => {
   })
 
   if(!author){
-    throw new HttpException(202, "Author is not exist")
+    throw new HttpException(404, "Author is not exist")
   }
 
   return author
